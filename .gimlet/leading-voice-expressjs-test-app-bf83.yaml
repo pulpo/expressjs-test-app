@@ -1,0 +1,18 @@
+app: expressjs-test-app-bf83
+env: leading-voice
+namespace: test2
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.64.0
+values:
+  containerPort: 3000
+  gitRepository: pulpo/expressjs-test-app
+  gitSha: '{{ .SHA }}'
+  image:
+    repository: 127.0.0.1:32447/expressjs-test-app-bf83
+    tag: '{{ .SHA }}'
+  imagePullSecrets: []
+  replicas: 1
+  resources:
+    ignoreLimits: true
