@@ -1,6 +1,6 @@
 app: expressjs-test-app
 env: leading-voice
-namespace: default
+namespace: test
 chart:
   repository: https://chart.onechart.dev
   name: onechart
